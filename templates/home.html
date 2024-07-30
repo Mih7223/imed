@@ -1,0 +1,70 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block Titre %} Accueil {% endblock %}
+{% block contenu %}
+
+<div class="jumbotron jumbotron-fluid" xmlns="http://www.w3.org/1999/html">
+       <div class="container text-center">
+           <h1 class="display-4">Voyages</h1>
+           <p class="lead text-muted">Voyager c'est ma vie! je vais vous faires découvrir mes destintions
+              favorites à travers ce blog.
+           </p>
+           <a href="{% url 'articles:articles'%}" type="button" class="btn btn-primary">Articles</a>
+        </div>
+   </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg mb-4">
+                <img class="w-100" src="{% get_media_prefix %}voyage.jpg" alt="Image de blog">
+            </div>
+            <div class="col-lg text-justify">
+                <h2>Sétif</h2>
+                <hr class="my-4">
+                <p class="lead">Sétif, Capitale des hauts plateaux #Algérie.. !
+Située au Nord-Est de l’Algérie et communément appelée capitale des hauts plateaux avec une altitude de plus de 1 100 m, Sétif est l’une des grandes villes Algériennes à 300 km de la capitale Alger et 100 km des côtes, connue pour son activité touristique, agricole, minière et industrielle.
+A la fois zone montagneuse représentée par la chaîne des Babors, les hautes plaines qui occupent la région centrale de la ville une lisière au Sud renfermant des cuvettes où dorment les étendues salées des chotts, une diversité qui confère à la ville de Sétif un climat continental avec un hiver très froid enneigé et un été torride, ce qui n’empêche pas la ville de disposer de plusieurs jardins qui ont su garder toute leur beauté, leur rayonnement et leur sérénité, à l’exemple du jardin de l’Émir Abdelkader, du jardin Reffaoui, celui de Chellal, les jardins des forêts de Boussellam et de Zenadia.
+Sétif dispose aussi d’un patrimoine archéologique important notamment la ville de Djemila fleuron du patrimoine universel ainsi que deux musées nationaux , celui de Sétif et de Djemila....
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <span class="fa-stack fa-5x">
+                    <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                     <i class="fas fa-hiking fa-stack-1x"></i>
+                </span>
+                <h2 class="display-6">Randonnée</h2>
+                <p>
+                    A pied,c'est encore mieux! Explorer des endroits ou trés peux de personnes n'osent s'aventurer
+                </p>
+             </div>
+           <div class="col-lg-4 text-center">
+                <span class="fa-stack fa-5x">
+                    <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                     <i class="fas fa-utensils fa-stack-1x"></i>
+                </span>
+               <h2 class="display-6">Dégustation</h2>
+                <p>
+                    Aller à la découverte de nouvelles saveurs.
+                    Des menu en couleur et épicés par des saveures à couper les souffles.
+                </p>
+             </div>
+            <div class="col-lg-4 text-center">
+                <span class="fa-stack fa-5x">
+                    <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                     <i class="fas fa-route fa-stack-1x"></i>
+                </span>
+                <h2 class="display-6">Découverte</h2>
+                <p>
+                    Des falaises, des caves,
+                    des plages à sables blanc s'étendant sur des kilomètres.
+                </p>
+            </div>
+        </div>
+
+   </div>
+
+
+{% endblock %}

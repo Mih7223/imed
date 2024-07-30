@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block contenu %}
+<div class="container">
+    <h1>{{ article.titre }}</h1>
+    <img width="500px" src="{{ article.image.url }}"  alt="{{ article.titre }}">
+    <p>{{ article.contenu }}</p>
+    <span>{{ article.date_publication }}</span>
+</div>
+{% endblock %}
+
+https://pixabay.com/fr/photos/cuba-beach-vacances-en-juillet-4153697/
